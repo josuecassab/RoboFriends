@@ -14,7 +14,7 @@ const CardList = ({robots}) => {
 			email={robots[i].email} />)
 	}
 	return (
-		<div>
+		<div className='flex flex-wrap flex-row justify-items-start gap-5'>
 			{cardComponent}
 		</div>
 		)

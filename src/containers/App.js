@@ -31,9 +31,11 @@ class App extends React.Component {
 			return <h1>Loading</h1>
 		} else {
 			return (
-				<div className='tc'>
-					<h1 className='f1'>Robo Friends</h1>
-					<SearchBox searchChange = {this.onSearchEvent}/>
+				<div className=''>
+					<div className='flex flex-col items-center gap-y-4 py-4'>
+						<h1 className='text-4xl'>Robo Friends</h1>
+						<SearchBox searchChange = {this.onSearchEvent}/>
+					</div>
 					<Scroll>
 						<CardList robots={filteredRobots}/>
 					</Scroll>

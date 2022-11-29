@@ -3,9 +3,9 @@ import React from 'react';
 
 function SearchBox (props) {
 	return (
-		<div className='pa2'>
+		<div className='p-2'>
 			<input
-				className='pa3 ba b--green bg-lightlest-blue' 
+				className='p-3 rounded-md border-teal-500 bg-white' 
 				type="search" 
 				placeholder="Search Robots"
 				onChange={props.searchChange}
